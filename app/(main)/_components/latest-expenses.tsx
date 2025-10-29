@@ -1,3 +1,4 @@
+import AddExpenseDrawer from "@/components/add-expense-drawer";
 import { cn } from "@/lib/utils";
 import React from "react";
 
@@ -38,7 +39,10 @@ function ExpenseItem({
 export default function LatestExpenses() {
   return (
     <div className="p-4 text-background w-[calc(100%-70px)] flex flex-col overflow-auto m-auto rounded-3xl bg-white flex-1">
-      <h3 className="font-bold pb-4">Expenses</h3>
+      <div className="flex justify-between items-center">
+        <h3 className="font-bold">Expenses</h3>
+        <AddExpenseDrawer />
+      </div>
       <div className="flex flex-col gap-2 overflow-y-scroll flex-1 h-0">
         <ExpenseItem
           name="Electricity Bill"
