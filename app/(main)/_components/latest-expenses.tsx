@@ -82,7 +82,6 @@ export default function LatestExpenses() {
           category="personal"
           amount="1,200.00"
         />
-
         <ExpenseItem
           name="Groceries"
           date="2024-06-02"

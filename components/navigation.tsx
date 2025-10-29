@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { Coins, LayoutDashboard, User } from "lucide-react";
+import { Coins, LayoutDashboard, Settings } from "lucide-react";
 import { usePathname } from "next/navigation";
 import React from "react";
 
@@ -35,9 +35,9 @@ export default function Navigation() {
       "
     >
       <div className="rounded-full bg-navigation-bg/50 min-w-40 h-16 px-2 flex items-center justify-between backdrop-blur-md shadow-lg">
-        <NavItem Icon={Coins} isActive={pathname.includes("/transaction")} />
+        <NavItem Icon={Coins} isActive={pathname.includes("/expenses")} />
         <NavItem Icon={LayoutDashboard} isActive={pathname === "/"} />
-        <NavItem Icon={User} isActive={pathname.includes("/profile")} />
+        <NavItem Icon={Settings} isActive={pathname.includes("/settings")} />
       </div>
     </div>
   );
