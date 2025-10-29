@@ -8,7 +8,7 @@ export default function MainLayout({
 }) {
   return (
     <div className="relative flex flex-col h-full ">
-      <main className="flex-1 overflow-y-scroll h-full">{children}</main>
+      <main className="flex-1 h-full">{children}</main>
       <Navigation />
     </div>
   );

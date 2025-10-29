@@ -10,7 +10,7 @@ export default function StackedCards() {
         <div className="bg-linear-to-r from-[#B5BEF0]/50 to-[#050B2C]/50  h-[200px] w-[calc(100%-70px)] rounded-3xl absolute top-3 left-1/2 -translate-x-1/2">
           <div className="py-4 px-6 flex flex-col h-full relative justify-between">
             <Button size="icon" className="rounded-full absolute top-4 right-4">
-              <Plus />
+              <Plus color="#0b031a" />
             </Button>
             <div>
               <p>Total</p>

@@ -2,14 +2,14 @@
 
 import StackedCards from "./_components/stacked-cards";
 import PlannedBudgets from "./_components/planned-budgets";
+import LatestExpenses from "./_components/latest-expenses";
 
 export default function Home() {
   return (
-    <div className="py-10 h-full">
+    <div className="py-10 h-full flex flex-col gap-6">
       <StackedCards />
-      <div className="px-6">
-        <PlannedBudgets />
-      </div>
+      <PlannedBudgets />
+      <LatestExpenses />
     </div>
   );
 }
