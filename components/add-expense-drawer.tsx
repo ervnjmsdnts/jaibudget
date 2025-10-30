@@ -8,11 +8,14 @@ import {
 } from "./ui/drawer";
 import { Plus } from "lucide-react";
 import { Button } from "./ui/button";
+import { cn } from "@/lib/utils";
 
 export default function AddExpenseDrawer({
   ButtonTrigger,
+  isGhost = true,
 }: {
   ButtonTrigger?: React.ReactNode;
+  isGhost?: boolean;
 }) {
   return (
     <Drawer>
@@ -20,8 +23,12 @@ export default function AddExpenseDrawer({
         {ButtonTrigger ? (
           ButtonTrigger
         ) : (
-          <Button size="icon" variant="ghost">
-            <Plus />
+          <Button
+            size="icon"
+            variant="ghost"
+            className={cn("rounded-full", !isGhost && "bg-transparent")}
+          >
+            <Plus color={!isGhost ? "#0b031a" : ""} />
           </Button>
         )}
       </DrawerTrigger>
